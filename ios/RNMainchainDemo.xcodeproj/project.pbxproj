@@ -40,7 +40,6 @@
 		69A2027C2195851800BABCC8 /* libElastos.Wallet.Utility.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 69A202532195849300BABCC8 /* libElastos.Wallet.Utility.dylib */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
-		C7BDAAD8DF804EC9B78C94AE /* libRNMainchainPlugin.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EA532C2BC99F4138BE927EE0 /* libRNMainchainPlugin.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -296,13 +295,6 @@
 			remoteGlobalIDString = 2D2A28201D9B03D100D4039D;
 			remoteInfo = "RCTAnimation-tvOS";
 		};
-		69681FBA21956E88007B47F7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 16E42CFA13264F9F9E62BC01 /* RNMainchainPlugin.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 134814201AA4EA6300B7C361;
-			remoteInfo = RNMainchainPlugin;
-		};
 		69A20233219578AD00BABCC8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E2DD6EC3FFA04F27AD19D972 /* RNElastosMainchain.xcodeproj */;
@@ -353,7 +345,6 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = RNMainchainDemo/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = RNMainchainDemo/main.m; sourceTree = "<group>"; };
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
-		16E42CFA13264F9F9E62BC01 /* RNMainchainPlugin.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNMainchainPlugin.xcodeproj; path = "../node_modules/react-native-mainchain-plugin/ios/RNMainchainPlugin.xcodeproj"; sourceTree = "<group>"; };
 		2D02E47B1E0B4A5D006451C7 /* RNMainchainDemo-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RNMainchainDemo-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* RNMainchainDemo-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RNMainchainDemo-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D16E6891FA4F8E400B85C8A /* libReact.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libReact.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -393,7 +384,6 @@
 				832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */,
 				00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */,
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
-				C7BDAAD8DF804EC9B78C94AE /* libRNMainchainPlugin.a in Frameworks */,
 				5E45EA908DF14164A7F20F1C /* libRNElastosMainchain.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -567,14 +557,6 @@
 			name = "Recovered References";
 			sourceTree = "<group>";
 		};
-		69681FB721956E88007B47F7 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				69681FBB21956E88007B47F7 /* libRNMainchainPlugin.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		69A20230219578AD00BABCC8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -607,7 +589,6 @@
 				832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */,
 				00C302DF1ABCB9EE00DB3ED1 /* RCTVibration.xcodeproj */,
 				139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */,
-				16E42CFA13264F9F9E62BC01 /* RNMainchainPlugin.xcodeproj */,
 				E2DD6EC3FFA04F27AD19D972 /* RNElastosMainchain.xcodeproj */,
 			);
 			name = Libraries;
@@ -819,10 +800,6 @@
 				{
 					ProductGroup = 69A20230219578AD00BABCC8 /* Products */;
 					ProjectRef = E2DD6EC3FFA04F27AD19D972 /* RNElastosMainchain.xcodeproj */;
-				},
-				{
-					ProductGroup = 69681FB721956E88007B47F7 /* Products */;
-					ProjectRef = 16E42CFA13264F9F9E62BC01 /* RNMainchainPlugin.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -1072,13 +1049,6 @@
 			fileType = archive.ar;
 			path = libRCTAnimation.a;
 			remoteRef = 5E9157341DD0AC6500FF2AA8 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		69681FBB21956E88007B47F7 /* libRNMainchainPlugin.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libRNMainchainPlugin.a;
-			remoteRef = 69681FBA21956E88007B47F7 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		69A20234219578AD00BABCC8 /* libRNElastosMainchain.a */ = {
