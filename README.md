@@ -8,7 +8,7 @@ This is a demo app using the react-native-elastos-wallet-core npm package.
 $ git clone https://github.com/cyber-republic/react-native-elastos-wallet-core-demo
 $ cd react-native-elastos-wallet-core-demo
 $ npm i
-$ cd node_modules/react-native-elastos-wallet-core-demo/Elastos.ORG.Wallet.Lib.C/build/ios/src
+$ cd node_modules/react-native-elastos-wallet-core/Elastos.ORG.Wallet.Lib.C/build/ios/src
 $ install_name_tool -id  "$(pwd)/libElastos.Wallet.Utility.dylib" libElastos.Wallet.Utility.dylib
 $ react-native start
 $ react-native run-ios
