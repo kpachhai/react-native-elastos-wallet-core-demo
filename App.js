@@ -8,7 +8,7 @@
 
 import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View, Button} from 'react-native';
-import RNElastosMainchain from 'react-native-elastos-mainchain';
+import RNElastosMainchain from 'react-native-elastos-wallet-core';
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
