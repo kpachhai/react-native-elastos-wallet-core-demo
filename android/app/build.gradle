@@ -137,6 +137,7 @@ android {
 }
 
 dependencies {
+    compile project(':react-native-elastos-wallet-core')
     compile project(':react-native-elastos-mainchain')
     compile project(':react-native-mainchain-plugin')
     implementation fileTree(dir: "libs", include: ["*.jar"])

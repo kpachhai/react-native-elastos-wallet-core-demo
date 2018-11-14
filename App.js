@@ -21,16 +21,27 @@ type Props = {};
 export default class App extends Component<Props> {
 
     state={
-        menmonic: ""
+        menmonic: "",
+        pk:"",
+        sk:""
     }
 
 
-    sayHi = () => {
-        console.log("BLABLA.................")
-        console.log(RNElastosMainchain);
+    generateMnemonic = () => {
         RNElastosMainchain.generateMnemonic( (err, res) => {
-            console.log(res);
             this.setState({mnemonic: res})
+        });
+    }
+
+    getSinglePublicKey = () => {
+        RNElastosMainchain.getSinglePublicKey( (err, res) => {
+            this.setState({pk: res})
+        });
+    }
+
+    getSinglePrivateKey = () => {
+        RNElastosMainchain.getSinglePrivateKey( (err, res) => {
+            this.setState({sk: res})
         });
     }
 
@@ -39,12 +50,28 @@ export default class App extends Component<Props> {
     return (
       <View style={styles.container}>
 
-         <Button title="Generate Mnemonic" onPress={this.sayHi} />
+         <Button title="Generate Mnemonic" onPress={this.generateMnemonic} />
 
          { this.state.mnemonic == "" ?
              <View></View>
              :
              <View style={{padding:20}}><Text>{this.state.mnemonic}</Text></View>
+         }
+
+         <Button title="Get Public Key" onPress={this.getSinglePublicKey} />
+
+         { this.state.pk == "" ?
+             <View></View>
+             :
+             <View style={{padding:20}}><Text>{this.state.pk}</Text></View>
+         }
+
+         <Button title="Get Private Key" onPress={this.getSinglePrivateKey} />
+
+         { this.state.sk == "" ?
+             <View></View>
+             :
+             <View style={{padding:20}}><Text>{this.state.sk}</Text></View>
          }
 
       </View>
